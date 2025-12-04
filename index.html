@@ -352,16 +352,20 @@
             flex: 1;
         }
 
-        .home-photo {
-            flex-shrink: 0;
-            width: 280px;
-        }
+/* Image floats right; text wraps beside and then continues underneath */
+.home-photo {
+    float: right;
+    width: 260px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
 
-        .home-photo img {
-            width: 100%;
-            height: auto;
-            border-radius: 4px;
-        }
+.home-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
 
         /* Areas */
         .areas {
@@ -488,6 +492,9 @@
             <div class="content-section active" id="home">
                 <div class="home-content-wrapper">
                     <div class="home-text">
+                       <div class="home-photo">
+                        <img src="https://github.com/giulianoinfantino/giulianoinfantino.github.io/blob/main/profilfoto_neu.jpg?raw=true" alt="Giuliano Infantino">
+                    </div>
                         <div class="intro">
                             <p>I am a doctoral candidate in philosophy at the University of Stuttgart, working on a dissertation concerning the concept of nature in Hegel’s Philosophy of Nature. My research reconstructs the conditions under which nature can be understood philosophically. I argue that, although nature does not share the same conceptual form as thought, its intelligibility requires a distinctive mode of philosophical cognition rather than mere empirical description. This project combines historical-systematic scholarship with contemporary debates in metaphysics, philosophy of science, and epistemology.
 
@@ -500,10 +507,6 @@ Outside my academic work, I spend time doing sports, and I regularly go mountain
                             <p><strong>Areas of Competence:</strong> Metaphysics and Philosophy of Nature (Kant, Hegel).</p>
                             <p><strong>Areas of Interest:</strong> Philosophy of Mind (Theories of Rationality, Empirical Knowledge), Philosophy of Culture (Cassirer), Meta-Ethics (Kant), Applied Ethics (Children's suffrage).</p>
                         </div>
-                    </div>
-
-                    <div class="home-photo">
-                        <img src="https://github.com/giulianoinfantino/giulianoinfantino.github.io/blob/main/profilfoto_neu.jpg?raw=true" alt="Giuliano Infantino">
                     </div>
                 </div>
 
