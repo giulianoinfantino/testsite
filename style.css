@@ -1,0 +1,183 @@
+/* Basic reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #fafafa;
+}
+
+/* Layout container */
+.wrapper {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 1.25rem 3rem;
+}
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid #ddd;
+  padding: 2.5rem 0 1.5rem;
+}
+
+.site-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.site-subtitle {
+  margin-top: 0.25rem;
+  font-size: 1.05rem;
+  color: #555;
+}
+
+/* Navigation */
+.site-nav {
+  margin-top: 1.5rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-right: 1.3rem;
+  color: #555;
+}
+
+.site-nav a:last-child {
+  margin-right: 0;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Main content */
+.site-main {
+  padding-top: 2rem;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 3rem;
+}
+
+.section + .section {
+  border-top: 1px solid #eee;
+  padding-top: 2rem;
+}
+
+/* Headings */
+.section h2 {
+  font-size: 1.4rem;
+  margin: 0 0 0.75rem;
+}
+
+.section h3 {
+  font-size: 1.1rem;
+  margin: 1.5rem 0 0.25rem;
+}
+
+/* Text */
+p {
+  margin: 0 0 0.75rem;
+}
+
+ul {
+  margin: 0.25rem 0 0.75rem 1.25rem;
+  padding: 0;
+}
+
+li {
+  margin: 0.1rem 0;
+}
+
+/* Lists that look like CV / bibliography */
+.cv-list,
+.pub-list,
+.talk-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.cv-list li,
+.pub-list li,
+.talk-list li {
+  margin-bottom: 0.35rem;
+}
+
+/* Small labels, e.g. [*] or [†] */
+.small-label {
+  font-size: 0.85em;
+  color: #555;
+}
+
+/* Portrait */
+.portrait {
+  margin-top: 1rem;
+}
+
+.portrait img {
+  max-width: 180px;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Contact block */
+.contact-block {
+  margin-top: 0.5rem;
+  white-space: pre-line;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid #ddd;
+  padding: 1.5rem 0 0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* "Back to top" */
+.back-to-top {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.back-to-top a {
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: #777;
+}
+
+.back-to-top a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .site-title {
+    font-size: 2rem;
+  }
+
+  .site-nav a {
+    display: inline-block;
+    margin-right: 0.9rem;
+    margin-bottom: 0.4rem;
+  }
+}
